@@ -3,15 +3,15 @@
         <div class="col">
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col" *ngFor="let item of stocks">
-                    <div class="card">
+                    <div class="card p-3">
                         <label for="txtName">Name</label>
-                        <input id="txtName" type="text" value="{{item.name}}">
+                        <input id="txtName" type="text" class="form-control mb-2" value="{{item.name}}">
 
                         <label for="txtPrice">Price</label>
-                        <input id="txtPrice" type="text" value="{{item.price}}">
+                        <input id="txtPrice" type="text" class="form-control mb-2" value="{{item.price}}">
 
                         <label for="txtQuantity">Quantity</label>
-                        <input id="txtQuantity" type="text" value="{{item.quantity}}">
+                        <input id="txtQuantity" type="text" class="form-control mb-2" value="{{item.quantity}}">
                     </div>
                 </div>
             </div>
