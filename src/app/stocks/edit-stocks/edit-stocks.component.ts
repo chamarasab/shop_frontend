@@ -12,7 +12,7 @@ export class EditStocksComponent implements OnInit{
   }
   ngOnInit(): void {
     this.route.paramMap.subscribe((params)=>{
-      params.get('')
+      params.get('id')
     })
   }
 }
