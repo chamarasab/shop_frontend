@@ -14,7 +14,7 @@ const routes: Routes = [
     component: AddStocksComponent
   },
   {
-    path: 'edit-stock',
+    path: 'edit-stock/:id',
     component: EditStocksComponent
   },
 ];
