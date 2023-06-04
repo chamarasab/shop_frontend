@@ -7,12 +7,14 @@ import { AllStocksComponent } from './stocks/all-stocks/all-stocks.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AddStocksComponent } from './stocks/add-stocks/add-stocks.component';
 import { FormsModule } from '@angular/forms';
+import { EditStocksComponent } from './stocks/edit-stocks/edit-stocks.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AllStocksComponent,
-    AddStocksComponent
+    AddStocksComponent,
+    EditStocksComponent
   ],
   imports: [
     BrowserModule,
