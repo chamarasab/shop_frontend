@@ -30,4 +30,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 <img src="https://github.com/chamarasab/shop_frontend/blob/master/demo_AdobeExpress.gif"/>
 <img src="https://github.com/chamarasab/shop_frontend/blob/master/demos/edit.gif"/>
 
+https://youtu.be/EjxsfUE7EkQ
+
 
