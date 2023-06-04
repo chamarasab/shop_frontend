@@ -1,1 +1,32 @@
-<p>edit-stocks works!</p>
+<div class="container">
+  <div class="row justify-content-center mt-5">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header">
+          Update Stock
+        </div>
+        <div class="card-body">
+          <form action="">
+            <div class="mb-3">
+              <label for="txtName">Name</label>
+              <input type="text" id="txtName" class="form-control" name="name" [(ngModel)]="stocks.name">
+            </div>
+            <div class="mb-3">
+              <label for="txtPrice">Price</label>
+              <input type="text" id="txtPrice" class="form-control" name="price"
+                     [(ngModel)]="stocks.price">
+            </div>
+            <div class="mb-3">
+              <label for="txtQuantity">Quantity</label>
+              <input type="text" id="txtQuantity" class="form-control" name="quantity"
+                     [(ngModel)]="stocks.quantity">
+            </div>
+            <div class="d-grid gap-2">
+              <button class="btn btn-primary" type="button" >Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
