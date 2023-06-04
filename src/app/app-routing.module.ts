@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AllStocksComponent } from './stocks/all-stocks/all-stocks.component';
 import { AddStocksComponent } from './stocks/add-stocks/add-stocks.component';
+import {EditStocksComponent} from "./stocks/edit-stocks/edit-stocks.component";
 
 const routes: Routes = [
   {
@@ -11,7 +12,11 @@ const routes: Routes = [
   {
     path: 'add-stock',
     component: AddStocksComponent
-  }
+  },
+  {
+    path: 'edit-stock',
+    component: EditStocksComponent
+  },
 ];
 
 @NgModule({
