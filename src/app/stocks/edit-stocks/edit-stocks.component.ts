@@ -7,12 +7,11 @@ import {ActivatedRoute} from "@angular/router";
   styleUrls: ['./edit-stocks.component.css']
 })
 export class EditStocksComponent implements OnInit{
-  constructor(private route:ActivatedRoute) {
-
-  }
+  constructor(private route:ActivatedRoute) {}
+  itemId:String = '';
   ngOnInit(): void {
     this.route.paramMap.subscribe((params)=>{
-      params.get('id')
+      this.itemId = params.get('id') ?? ""
     })
   }
 }
