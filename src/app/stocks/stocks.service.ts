@@ -16,5 +16,13 @@ export class StocksService {
   create(stock: CreateStock) {
     return this.http.post("http://localhost:3000/stocks", stock);
   }
+
+  getById(id:string) {
+    return this.http.get<Stocks>(`http://localhost:3000/stocks/${id}`)
+  }
+
+  update(id:string, stock:CreateStock) {
+    return this.http.put(`http://localhost:3000/stocks/${id}`,stock);
+  }
 }
 
