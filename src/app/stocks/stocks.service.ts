@@ -24,5 +24,9 @@ export class StocksService {
   update(id:string, stock:CreateStock) {
     return this.http.put(`http://localhost:3000/stocks/${id}`,stock);
   }
+
+  delete(id:string) {
+    return this.http.delete(`http://localhost:3000/stocks/${id}`);
+  }
 }
 
