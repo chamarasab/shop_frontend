@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {ActivatedRoute} from "@angular/router";
+import {ActivatedRoute, Router} from "@angular/router";
 import {StocksService} from "../stocks.service";
 import {CreateStock} from "../create-stock";
 
@@ -9,7 +9,7 @@ import {CreateStock} from "../create-stock";
   styleUrls: ['./edit-stocks.component.css']
 })
 export class EditStocksComponent implements OnInit{
-  constructor(private route:ActivatedRoute, private stocksService:StocksService) {}
+  constructor(private route:ActivatedRoute, private stocksService:StocksService,private router:Router) {}
   itemId:string = '';
   stocks: CreateStock = {
     name: '',
@@ -28,6 +28,12 @@ export class EditStocksComponent implements OnInit{
       this.stocks.name = data.name;
       this.stocks.price = data.price;
       this.stocks.quantity = data.quantity;
+    })
+  }
+
+  update() {
+    this.stocksService.update(this.itemId, this.stocks).subscribe(()=>{
+      this.router.navigate(['/'])
     })
   }
 }
